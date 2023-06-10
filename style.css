@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body, input, select, textarea {
+    font-family: var(--font-Poppins);
+}
+
 :root{
     --back-header:#535971;
     --back-body:#EFEFEF;
@@ -12,6 +16,8 @@
     --border-input:#E6E6F0;
     --label-color:#4E4958;
     --span-color:#C1BCCC;
+    --span-hover-color:#6c6a71;
+    --title-color:#ffffff;
 
     --font-Staatliches:'Staatliches', cursive;
     --font-Poppins:'Poppins', sans-serif;
@@ -21,5 +27,126 @@
 
 body{
     font-size: 1.6rem;
-    color: var(--back-body);
+    background-color: var(--back-body);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-color: var(--back-header);
+    width: 100%;
+    height: 43.6rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container{
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 35rem;
+    margin-top: 14rem;
+}
+
+header h1{
+    font-family: var(--font-Staatliches);
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: var(--title-color);
+    margin-bottom: 1.8rem;
+}
+
+header p{
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--title-color);
+    line-height: 3rem;
+}
+
+form{
+    max-width: 75rem;
+    min-height: 30rem;
+    background-color: var(--title-color);
+    margin-top: 5.8rem;
+    padding: 6.4rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    border: none;
+}
+
+form legend,.legend-2{
+    font-family: var(--font-Staatliches);
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: var(--back-header);
+    border-bottom: 1px solid var(--border-input);
+    padding-bottom: 1.8rem;
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.legend-2{
+    padding-bottom: 0.6rem;
+}
+
+form .col-2{
+    display: flex;
+    flex-direction: row;    
+    gap: 2.2rem;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--label-color);
+    margin-bottom: 0.8rem;
+    line-height: 2.4rem;
+}
+
+.input-wrapper span{
+    font-size: 1.2rem;
+    color: var(--span-color);
+    line-height: 2rem;
+    margin-left: 1.2rem;
+}
+
+.input-wrapper span:hover{
+    color:var(--span-hover-color) ;
+}
+
+.input-wrapper input{
+    background-color: var(--back-input);
+    border: 1px solid var(--border-input);
+    border-radius: 0.8rem;
+    height: 5.6rem;
+    padding: 0 2.4rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: red;
+}
+
+.col-2 > div:nth-child(1){
+    width: 50%;
+}
+
+.col-2 > div:nth-child(2){
+    width: 50%;
 }

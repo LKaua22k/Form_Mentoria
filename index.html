@@ -26,6 +26,46 @@
         <form id="my-form">
             <fieldset>
                 <legend>Informações pessoais</legend>
+
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="event-name">Nome</label>
+                        <input type="text" name="event-name" id="event-name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-surname">Sobrenome</label>
+                        <input type="text" name="event-surname" id="event-surname">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-email">
+                        Email
+                        <span>(digite um email válido)</span>
+                    </label>
+                    <input type="email" name="event-email" id="event-email">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-password">
+                        Senha
+                        <span>(mínimo de 6 caracteres)</span>
+                    </label>
+                    <input type="number" name="event-password" id="event-password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="legend-2">Informações do mentor</legend>
+
+                <div class="input-wrapper">
+                    <label for="event-email">
+                        Nome do seu mentor
+                        <span>(só o primeiro nome)</span>
+                    </label>
+                    <input type="email" name="event-email" id="event-email">
+                </div>
             </fieldset>
         </form>
     </div>
