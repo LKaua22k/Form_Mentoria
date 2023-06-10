@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --back-header:#535971;
+    --back-body:#EFEFEF;
+    --back-button:#FF5374;
+    --back-input:#FAFAFC;
+    --border-input:#E6E6F0;
+    --label-color:#4E4958;
+    --span-color:#C1BCCC;
+
+    --font-Staatliches:'Staatliches', cursive;
+    --font-Poppins:'Poppins', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
